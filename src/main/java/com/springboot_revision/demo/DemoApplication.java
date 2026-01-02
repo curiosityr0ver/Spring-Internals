@@ -15,7 +15,7 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Autowired
 	public DemoApplication(
-            @Qualifier("razorpayPaymentService") PaymentService paymentService) {
+            PaymentService paymentService) {
 		this.paymentService = paymentService;
 	}
 
